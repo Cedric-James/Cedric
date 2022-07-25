@@ -1,0 +1,109 @@
+body{
+    background-image:url("naturee.jpg");
+    background-repeat: no-repeat;
+    background-position:center;
+    height: 100vh;
+    width: 100vw;
+    font-family:sans-serif;
+    overflow:hidden;
+}
+
+h1{
+    color:white;
+}
+
+.family{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.member{
+    display:grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 270px 250px 80px;
+    grid-template-areas: "image" "des" "button";
+    border-radius: 18px;
+    background:white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    text-align: center;
+    transition:0.5s ease;
+}
+
+.mimage{
+    grid-area:image;
+    background: url("Father.jpg");
+    background-size:cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.mimage1{
+    grid-area:image;
+    background: url("Me.jpeg");
+    background-size:cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.mimage2{
+    grid-area:image;
+    background: url("Mother.jpg");
+    background-size:cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.mdes{
+    grid-area:des;
+    margin:15px;
+}
+
+.mbutton{
+    grid-area: button;
+    background-color: #f63c41;
+    border-bottom-left-radius:15px;
+    border-bottom-right-radius: 15px;
+}
+
+.button{
+    width:300px;
+    height:80px;
+    background:none;
+    border:none;
+    color:white;
+    font-size:25px;
+    transition: 0.3s ease;
+}
+
+h2{
+    font-size:23px;
+    color:#f63c41;
+}
+
+p{
+    color:gray;
+    font-size:17px;
+}
+
+.member:hover{
+    transform:scale(1.05);
+    box-shadow:5px 5px 15px rgba(0,0,0,0.5)
+}
+.button:hover{
+    transform:scale(1.25);
+    cursor:pointer;
+}
+.button1{
+    width: 1585px; 
+    height:50px; 
+    background-color:#f63c41; 
+    color:white; border: none; 
+    border-radius:15px; 
+    font-size:40px;
+    transition:0.3s ease;
+}
+.button1:hover{
+    transform:scale(1.05);
+    cursor:pointer;
+}
